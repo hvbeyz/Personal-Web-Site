@@ -1,0 +1,205 @@
+:root {
+    --bs-nav-link-color: #85A98F; 
+}
+.logo-img{
+    width: 50px;
+}
+.hero-section {
+    width: 100%;
+    background-image: url('images/background.png');
+    background-size: cover; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    color: white;
+    padding: 60px 20px;    
+    min-height: 700px;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    position: relative; 
+   
+}
+@media (max-width: 767px) {
+   
+}
+.navbar{
+    background-color: #000000D2;
+}
+.navbar a{
+    color: #FFFFFF;
+}
+.nav-link {
+    color: var(--bs-nav-link-color);
+    transition: color 0.3s ease; /* Renk geçiş efekti */
+}
+
+.nav-link:hover {
+    color: #85A98F; /* Hover durumunda renk */
+}
+
+.nav-link:active,
+.nav-link:focus {
+    color: #85A98F; /* Tıklandığında da renk değişmesin */
+}
+.navbar-brand{
+    color: #FFFFFF;
+    animation: none;
+}
+.btn-navbar{
+        color: #85A98F;
+        font-weight: 500;      
+        border:2px solid #5A6C57;
+        width: auto;    
+}
+.btn-navbar:hover{
+        background-color: #5A6C57;
+        color: #FFFFFF;
+}
+.navbar-toggler{
+        background-color: #FFFFFF;
+ }
+.text-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+.word {
+    margin: auto;
+    color: white;
+    font: normal 20px 'tahoma';
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+    position: absolute; 
+    top: 55%; 
+}
+.arrow-btn {
+    display: inline-block;
+    font-size: 30px;
+    position: absolute; 
+    bottom: 25px; 
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+.arrow-btn i {
+    animation: bounce 1s infinite;
+}
+@keyframes bounce {
+    0% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-10px); 
+    }
+    100% {
+        transform: translateY(0); 
+    }
+}
+.arrow-btn:hover {
+    color: #5A6C57;
+}
+.profile-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 30px;
+}
+.profile-left {
+    background-color: #FFFFFF;
+    padding: 30px;
+    text-align: center;
+    flex: 1;
+}
+.profile-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    border: 2px solid#5A6C57;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+.social-icons a {
+    color: #666;
+    font-size: 18px;
+    margin: 0 8px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: #85A98F;
+}
+.profile-right {
+    padding: 30px;   
+    flex: 2;
+}
+.green-btn {
+    color: #FFFFFF;
+    background-color: #5A6C57;
+    font-weight: 500;         
+     width: auto;    
+}
+ 
+.green-btn:hover {
+    border:2px solid #5A6C57;
+    color: #5A6C57;
+}
+
+#skills, #projects{
+    background-color: #F5F5F5;;  
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 30px;
+}
+#skills li{   
+    background-color: transparent !important;         
+}
+
+.progress-bar {
+    transition: width 2s ease-in-out; 
+    background-color: #5A6C57; 
+}
+.progress-bar {
+    width: 0%;
+}
+@keyframes progressAnimation {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: var(--progress-width); 
+    }
+}
+.card:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease-in-out;
+}
+.contact-form {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contact-card {
+
+        max-width: 800px;
+        width: 100%; 
+        margin: 0 auto; 
+        padding: 20px;
+        background-color: #F5F5F5;; 
+        border: solid 1px #5A6C5733; 
+        border-radius: 10px; 
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+.contact-card:hover{
+transform: scale(1.05);
+transition: transform 0.3s ease-in-out;
+}   
